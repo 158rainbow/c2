@@ -1,0 +1,12 @@
+name: examplec1
+on: [ push, pull_request ]
+
+jobs:
+  runner:
+    runs-on: ubuntu:20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: collie
+        uses: dvkunion/collie_tricker@main
+        with:
+          token: cfsbb8a8uter77sjvj7g
